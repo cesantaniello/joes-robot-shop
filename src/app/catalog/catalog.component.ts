@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IProduct } from './product.model';
 
 @Component({
   selector: 'bot-catalog',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./catalog.component.css']
 })
 export class CatalogComponent {
+  product: IProduct;
 
+  constructor() {
+    this.product = {
+      id: 1,
+      description: 'A robot that can clean your house.',
+      name: 'RoboVac',
+      imageName: 'robovac.jpg',
+      category: 'Home Appliances',
+      price: 299.99,
+      discount: 20
+    };
+  }
 }
