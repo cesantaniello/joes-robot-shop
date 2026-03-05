@@ -20,4 +20,8 @@ export class CatalogComponent {
       discount: 20
     };
   }
+
+  getImageUrl(product: IProduct): string {
+    return `assets/images/robot-parts/head-friendly.png`;
+  }
 }
