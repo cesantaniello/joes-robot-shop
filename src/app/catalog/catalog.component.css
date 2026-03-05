@@ -107,3 +107,9 @@
 .cta:hover {
   background-color: #218838;
 }
+
+.discount {
+  color: #dc3545;
+  font-size: 20px;
+  margin-top: 5px;
+}
