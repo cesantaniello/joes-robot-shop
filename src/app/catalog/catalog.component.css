@@ -52,11 +52,11 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 20px 25px;
-}
-
-.product .product-details {
-  display: flex;
-  align-items: center;
+  
+  .product-details {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .product img {
