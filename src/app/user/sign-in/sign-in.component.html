@@ -10,5 +10,8 @@
         Sign In
       </button>
     </div>
+      <div class="signInError" *ngIf="signInError">
+        Invalid email or password.
+      </div>
   </form>
 </div>
