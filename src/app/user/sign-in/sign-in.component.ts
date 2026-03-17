@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IUserCredentials } from '../user.model';
+import { UserService } from '../user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'bot-sign-in',
@@ -12,6 +14,11 @@ export class SignInComponent {
     password: '',
   };
 
-  constructor() { }
+  constructor(private userService: UserService, private router: Router) { }
 
+  signIn() {
+    this.userService.signIn(this.credentials).subscribe(() => {
+      this.router.navigate(['/catalog']);
+    });
+  }
 }
